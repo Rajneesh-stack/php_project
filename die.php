@@ -10,5 +10,11 @@ echo "hellooooooooooooooooooooooooooooooooooooo";
 ?>
 <?php
 //=======================================================================
-
+echo "<br>";
+// function dead($para =''){
+//     echo $para; ////how die method work 
+//     exit;
+// }
+dead("hey who are u");
+echo "Ram Ram";
 ?>
