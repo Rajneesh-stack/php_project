@@ -107,7 +107,31 @@ else{
 }
 }
 
- prime(12)
+ prime(12);
+?>
+<?php
+
+////function with return type==========================================================
+echo "<br>";
+echo "<br>";
+function calculate($a,$b,$ope){//function with parameter
+    if($ope=="+"){
+        return $a+$b;
+    }elseif($ope=="-"){
+        return $a-$b;
+    } elseif($ope=="*"){
+        return $a*$b;
+    } elseif($ope=="/"){
+        return $a/$b;
+    } elseif($ope=="%"){
+        return $a%$b;
+    }
+    else{
+       return ("kuch bhi bolte ho hai na".$ope);
+    }
+
+}
+ echo calculate(22,4,"");
 ?>
 
 
