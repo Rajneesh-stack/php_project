@@ -1,0 +1,1 @@
+read file is a method in file handling must learn it
