@@ -1,6 +1,6 @@
 
 <?php
-$gendereroor=$optionerror='';
+$gendererror=$optionerror='';
 if ($_SERVER['REQUEST_METHOD']=='POST'){
     if(isset($_POST['validation'])){
         if(empty($_POST['country'])){
@@ -19,9 +19,9 @@ if ($_SERVER['REQUEST_METHOD']=='POST'){
         <option value="hii">hii</option>
         <option value="suno">suno</option>
         <option value="bolo">bolo</option>
-        <option value="nikal">nikal</option>
-        <small style="color:red;"><?=$gendererror?></small>
+        <option value="nikal">nikal</option>    
     </select><br><br>
+    <small style="color:red;"><?=$gendererror?></small>
     <label for="nothing">gender :</label>
     
     male<input type="radio" id="nothing" name="gender" value="male">
@@ -32,6 +32,6 @@ if ($_SERVER['REQUEST_METHOD']=='POST'){
     <input type="submit" name="validation" value="validate">
 </form>
 <?php
-print_r($_POST['country']);
-print_r($_POST['gender']);
+echo "<pre>";
+print_r($_POST);
 ?>
